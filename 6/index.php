@@ -71,7 +71,7 @@
                             </td>
                             <td>
                                 <center>
-                                    <a onclick="if (confirm('Are you sure...?')) commentDelete(1); return false" href='config/delete.php?id=<?= $row1['id'] ?>'><img src="img/trash.png" class="delete" alt="Delete"></a>
+                                    <a onclick="if (confirm('Are you sure to Delete <?= $row['name'] ?>')) commentDelete(1); return false" href='config/delete.php?id=<?= $row1['id'] ?>'><img src="img/trash.png" class="delete" alt="Delete"></a>
                                     <a data-id=<?= $row1['id'] ?> data-toggle="modal" data-target="#addModal" class="tampilModalUbah"><img src="img/edit.png" class="edit" alt="Edit"></a>
                             </td>
                         </tr>
